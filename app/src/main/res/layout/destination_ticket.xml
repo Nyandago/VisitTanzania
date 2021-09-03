@@ -19,7 +19,7 @@
 
         <ImageView
             android:id="@+id/imgDestinationName"
-            android:layout_width="wrap_content"
+            android:layout_width="300dp"
             android:layout_height="146dp"
             android:layout_weight="1"
             android:padding="2pt"
@@ -36,10 +36,10 @@
             <TextView
                 android:id="@+id/tvName"
                 android:layout_width="match_parent"
-                android:layout_height="17dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@color/white"
-                android:paddingTop="7pt"
+                android:paddingTop="4pt"
                 android:text="Mount Kilimanjaro"
                 android:textSize="24sp"
                 android:textStyle="bold" />
