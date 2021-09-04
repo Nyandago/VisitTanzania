@@ -22,20 +22,20 @@ class MainActivity : AppCompatActivity() {
         //load destinations
         destinationList.add(
             DestinationTz("Mount Kilimanjaro","The Highest Free standing mountain in the world",
-        R.drawable.kilimanjaro)
+        R.drawable.kilimanjaro,false)
         )
         destinationList.add(DestinationTz("Serengeti National Park","Wild beast,zebra migration",
-            R.drawable.serengeti))
+            R.drawable.serengeti,true))
         destinationList.add(DestinationTz("Mikumi National Park","The fourth largest national park in Tanzania",
-            R.drawable.mikumi))
+            R.drawable.mikumi,true))
         destinationList.add(DestinationTz("Ngorongoro Crater","Amazing Crater with Lions, Rhinos, Zebra, Leopards and so much more",
-            R.drawable.ngorongoro))
+            R.drawable.ngorongoro,false))
         destinationList.add(DestinationTz("Zanzibar Island","Experience the Heaven on earth feeling",
-            R.drawable.zanzibar))
+            R.drawable.zanzibar, false))
         destinationList.add(DestinationTz("Tarangire National Park","The home of the giant Elephants",
-            R.drawable.tarangire))
+            R.drawable.tarangire,true))
         destinationList.add(DestinationTz("Magoroto Forest","Get Lost in the jungle",
-            R.drawable.magoroto))
+            R.drawable.magoroto, false))
 
         adapter = DestinationAdapter(this, destinationList)
         tvListDestinations.adapter = adapter
@@ -66,11 +66,23 @@ class DestinationAdapter : BaseAdapter{
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
         val destination = destinationList[position]
-        var inflater = context!!.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        var myView = inflater.inflate(R.layout.destination_ticket, null)
-        myView.tvName.text = destination.name!!
-        myView.tvDesc.text = destination.description!!
-        myView.imgDestinationName.setImageResource(destination.image!!)
-         return myView
+        if(destination.isNationalPark == true){
+            var inflater =
+                context!!.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
+            var myView = inflater.inflate(R.layout.destination_nat_park_ticket, null)
+            myView.tvName.text = destination.name!!
+            myView.tvDesc.text = destination.description!!
+            myView.imgDestinationName.setImageResource(destination.image!!)
+            return myView
+        } else
+        {
+            var inflater =
+                context!!.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
+            var myView = inflater.inflate(R.layout.destination_ticket, null)
+            myView.tvName.text = destination.name!!
+            myView.tvDesc.text = destination.description!!
+            myView.imgDestinationName.setImageResource(destination.image!!)
+            return myView
+        }
     }
 }
