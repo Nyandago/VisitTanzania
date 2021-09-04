@@ -47,13 +47,15 @@
 
             <TextView
                 android:id="@+id/tvDesc"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@color/white"
-                android:text="The Highest Free standing mountain in the world"
+                android:ellipsize="end"
+                android:lines="2"
+                android:text="Mount Kilimanjaro is a dormant volcano in Tanzania. It has three volcanic cones: Kibo, Mawenzi, and Shira. It is the highest mountain in Africa and the highest single free-standing mountain in the world: 5,895 metres (19,341 ft) above sea level and about 4,900 metres (16,100 ft) above its plateau base."
                 android:textSize="16sp"
-                android:visibility="visible" />
+                android:textAlignment="textStart" />
 
         </LinearLayout>
 

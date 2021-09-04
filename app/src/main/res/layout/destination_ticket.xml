@@ -50,6 +50,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@color/white"
+                android:textAlignment="textStart"
+                android:ellipsize="end"
+                android:lines="2"
                 android:text="The Highest Free standing mountain in the world"
                 android:textSize="16sp" />
 
