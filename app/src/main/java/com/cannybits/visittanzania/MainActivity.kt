@@ -1,6 +1,7 @@
 package com.cannybits.visittanzania
 
 import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -73,6 +74,13 @@ class DestinationAdapter : BaseAdapter{
             myView.tvName.text = destination.name!!
             myView.tvDesc.text = destination.description!!
             myView.imgDestinationName.setImageResource(destination.image!!)
+            myView.imgDestinationName.setOnClickListener{
+                val intent = Intent(context,DestinationInfo::class.java)
+                intent.putExtra("name",destination.name)
+                intent.putExtra("desc",destination.description)
+                intent.putExtra("image",destination.image)
+                context!!.startActivity(intent)
+            }
             return myView
         } else
         {
@@ -82,6 +90,13 @@ class DestinationAdapter : BaseAdapter{
             myView.tvName.text = destination.name!!
             myView.tvDesc.text = destination.description!!
             myView.imgDestinationName.setImageResource(destination.image!!)
+            myView.imgDestinationName.setOnClickListener{
+                val intent = Intent(context,DestinationInfo::class.java)
+                intent.putExtra("name",destination.name)
+                intent.putExtra("desc",destination.description)
+                intent.putExtra("image",destination.image)
+                context!!.startActivity(intent)
+            }
             return myView
         }
     }

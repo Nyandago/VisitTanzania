@@ -42,7 +42,8 @@
                 android:paddingTop="4pt"
                 android:text="Mount Kilimanjaro"
                 android:textSize="24sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:visibility="visible" />
 
             <TextView
                 android:id="@+id/tvDesc"
@@ -51,7 +52,8 @@
                 android:layout_weight="1"
                 android:background="@color/white"
                 android:text="The Highest Free standing mountain in the world"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:visibility="visible" />
 
         </LinearLayout>
 
