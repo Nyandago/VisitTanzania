@@ -7,18 +7,21 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.BaseAdapter
-import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.destination_ticket.view.*
+import android.widget.*
+
+
 
 class MainActivity : AppCompatActivity() {
 
     var destinationList = ArrayList<DestinationTz>()
-    var adapter: DestinationAdapter? = null
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+
 
         //load destinations
         destinationList.add(
@@ -38,66 +41,11 @@ class MainActivity : AppCompatActivity() {
         destinationList.add(DestinationTz("Magoroto Forest Estate","The 591 hectares sized Magoroto Forest Estate with its scenic freshwater lake has been opened in 1896 by German Settlers as one of the very first commercial plantations in Eastern Africa.\n Seized from the German owners as “enemy property” after World War 1 the Estate has been taken over by the Amboni Group in the 1940s\nThey are recognized as part of a Biodiversity Hotspot (WWF & IUCN), an “Important Bird Area” (Wildlife Conservation Society of Tanzania – WCST) and a “Man and Biosphere Reserve (UNESCO).",
             R.drawable.magoroto, false))
 
-        adapter = DestinationAdapter(this, destinationList)
-        tvListDestinations.adapter = adapter
-    }
-}
 
-class DestinationAdapter : BaseAdapter{
 
-    var destinationList = ArrayList<DestinationTz>()
-    var context:Context? = null
+        val tvListDest = findViewById<ListView>(R.id.tvListDestinations)
 
-    constructor(context: Context, destinationList : ArrayList<DestinationTz>): super(){
-        this.destinationList = destinationList
-        this.context = context
-    }
 
-    override fun getCount(): Int {
-       return destinationList.size
-    }
 
-    override fun getItem(position: Int): Any {
-      return destinationList[position]
-    }
-
-    override fun getItemId(position: Int): Long {
-       return position.toLong()
-    }
-
-    override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
-        val destination = destinationList[position]
-        if(destination.isNationalPark == true){
-            var inflater =
-                context!!.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-            var myView = inflater.inflate(R.layout.destination_nat_park_ticket, null)
-            myView.tvName.text = destination.name!!
-            myView.tvDesc.text = destination.description!!
-            myView.imgDestinationName.setImageResource(destination.image!!)
-            myView.imgDestinationName.setOnClickListener{
-                val intent = Intent(context,DestinationInfo::class.java)
-                intent.putExtra("name",destination.name)
-                intent.putExtra("desc",destination.description)
-                intent.putExtra("image",destination.image)
-                context!!.startActivity(intent)
-            }
-            return myView
-        } else
-        {
-            var inflater =
-                context!!.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-            var myView = inflater.inflate(R.layout.destination_ticket, null)
-            myView.tvName.text = destination.name!!
-            myView.tvDesc.text = destination.description!!
-            myView.imgDestinationName.setImageResource(destination.image!!)
-            myView.imgDestinationName.setOnClickListener{
-                val intent = Intent(context,DestinationInfo::class.java)
-                intent.putExtra("name",destination.name)
-                intent.putExtra("desc",destination.description)
-                intent.putExtra("image",destination.image)
-                context!!.startActivity(intent)
-            }
-            return myView
-        }
     }
 }

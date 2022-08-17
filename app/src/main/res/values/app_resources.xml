@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="nav_menu_home" tools:ignore="ExtraTranslation">Home</string>
+    <string name="nav_menu_favorites" tools:ignore="ExtraTranslation">Favorites</string>
+
+    <string name="nav_header_background" tools:ignore="ExtraTranslation">Nav Header Background</string>
+    <string name="placeholder_image" tools:ignore="ExtraTranslation">Placeholder Image</string>
+    <string name="delete_icon" tools:ignore="ExtraTranslation">Delete Icon</string>
+    <string name="favorite_icon" tools:ignore="ExtraTranslation">Favorite Icon</string>
+
+    <string name="top_cities" tools:ignore="ExtraTranslation">Top Cities</string>
+    <string name="favorites" tools:ignore="ExtraTranslation">Favorites</string>
+
+</resources>

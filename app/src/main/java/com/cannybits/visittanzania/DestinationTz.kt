@@ -1,15 +1,9 @@
 package com.cannybits.visittanzania
 
-class DestinationTz {
-    var name: String? = null
-    var description: String? = null
-    var image: Int? = null
-    var isNationalPark: Boolean? = null
+class DestinationTz(nm: String, desc: String, img: Int, isNationalPark: Boolean) {
+    var name: String? = nm
+    var description: String? = desc
+    var image: Int? = img
+    var isNationalPark: Boolean? = isNationalPark
 
-    constructor(nm: String, desc: String, img: Int, isNationalPark: Boolean){
-        this.name = nm
-        this.description = desc
-        this.image = img
-        this.isNationalPark = isNationalPark
-    }
 }
