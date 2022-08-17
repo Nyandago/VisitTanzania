@@ -3,21 +3,35 @@ package com.cannybits.visittanzania
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.MenuItem
 import android.widget.*
-
+import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.drawerlayout.widget.DrawerLayout
 
 
 class MainActivity : AppCompatActivity() {
 
     var destinationList = ArrayList<DestinationTz>()
 
-
+    lateinit var drawerLayout: DrawerLayout
+    lateinit var actionBarDrawerToggle: ActionBarDrawerToggle
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // drawer layout instance to toggle the menu icon to open
+        // drawer and back button to close drawer
+        drawerLayout = findViewById(R.id.my_drawer_layout)
+        actionBarDrawerToggle = ActionBarDrawerToggle(this, drawerLayout, R.string.nav_open, R.string.nav_close)
 
+        // pass the Open and Close toggle for the drawer layout listener
+        // to toggle the button
+        drawerLayout.addDrawerListener(actionBarDrawerToggle)
+        actionBarDrawerToggle.syncState()
+
+        // to make the Navigation drawer icon always appear on the action bar
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         //load destinations
         destinationList.add(
@@ -37,11 +51,16 @@ class MainActivity : AppCompatActivity() {
         destinationList.add(DestinationTz("Magoroto Forest Estate","The 591 hectares sized Magoroto Forest Estate with its scenic freshwater lake has been opened in 1896 by German Settlers as one of the very first commercial plantations in Eastern Africa.\n Seized from the German owners as “enemy property” after World War 1 the Estate has been taken over by the Amboni Group in the 1940s\nThey are recognized as part of a Biodiversity Hotspot (WWF & IUCN), an “Important Bird Area” (Wildlife Conservation Society of Tanzania – WCST) and a “Man and Biosphere Reserve (UNESCO).",
             R.drawable.magoroto, false))
 
+    }
 
-
-        val tvListDest = findViewById<ListView>(R.id.tvListDestinations)
-
-
-
+    // override the onOptionsItemSelected()
+    // function to implement
+    // the item click listener callback
+    // to open and close the navigation
+    // drawer when the icon is clicked
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return if (actionBarDrawerToggle.onOptionsItemSelected(item)) {
+            true
+        } else super.onOptionsItemSelected(item)
     }
 }

@@ -1,3 +1,8 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Visit Tanzania</string>
+    <string name="my_account">My Account</string>
+    <string name="settings">Settings</string>
+    <string name="logout">Logout</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
 </resources>
