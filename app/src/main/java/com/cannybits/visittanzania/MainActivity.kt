@@ -11,8 +11,6 @@ import androidx.drawerlayout.widget.DrawerLayout
 
 class MainActivity : AppCompatActivity() {
 
-    var destinationList = ArrayList<DestinationTz>()
-
     lateinit var drawerLayout: DrawerLayout
     lateinit var actionBarDrawerToggle: ActionBarDrawerToggle
 
@@ -35,14 +33,6 @@ class MainActivity : AppCompatActivity() {
         // to make the Navigation drawer icon always appear on the action bar
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-//        //array adapter
-//        val arrayAdapter: ArrayAdapter<*>
-//        val tzDestinations = arrayOf(
-//            "Mikumi National Park", "Serengeti National Park", "Magoroto Forest Estate",
-//            "Mount Kilimanjaro", "Ngorongoro Crater","Tarangire National Park", "Zanzibar Island","Kilwa Historical Sites",
-//            "Ruaha National Park", "Kitulo National Park", "Nyerere National Park", "Serval Wildlife", "Chemka Hot springs",
-//            "Mnazi Bay Ruvuma Estuary Marine Park", "Bagamoyo Historical Site", "Saadani national Park"
-//        )
 
 //
 //        //load destinations
@@ -64,11 +54,6 @@ class MainActivity : AppCompatActivity() {
 //            R.drawable.magoroto, false))
 
 
-//        // access the listView from xml file
-//        val mListView = findViewById<ListView>(R.id.lvDestinationTz)
-//        arrayAdapter = ArrayAdapter(this,
-//            android.R.layout.simple_list_item_1, tzDestinations)
-//        mListView.adapter = arrayAdapter
 
 
 
