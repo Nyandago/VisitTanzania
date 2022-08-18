@@ -16,13 +16,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
+        <ListView
+            android:id="@+id/lvDestinationTz"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="128dp"
-            android:gravity="center"
-            android:text="Visit Tanzania App"
-            android:textSize="18sp" />
+            android:layout_height="wrap_content" >
+        </ListView>
     </LinearLayout>
 
     <!-- this the navigation view which draws and shows the navigation drawer -->
