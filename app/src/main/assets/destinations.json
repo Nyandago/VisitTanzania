@@ -1,15 +1,15 @@
 {
   "destinations": [
     {
-      "title": "Mount Kilimanjaro",
-      "image" : "https://en.wikipedia.org/wiki/File:Mt._Kilimanjaro_12.2006.JPG",
-      "description": "It is the highest mountain in Africa.\\nThe highest single free-standing mountain in the world.\\n5,895 metres (19,341 ft) above sea level and about 4,900 metres (16,100 ft) above its plateau base.",
+      "title": "Serengeti National Park",
+      "imageUrl" : "https://www.serengeti.com/assets/img/serengeti-national-park.jpg",
+      "description": "Serengeti National Park is a World Heritage Site teeming with wildlife:\\nOver 2 million ungulates, 4000 lions, 1000 leopard, 550 cheetahs and some 500 bird species inhabit an area close to 15,000 square kilometers in size.\\nSerengeti National Park, in northern Tanzania, is known for its massive annual migration of wildebeest and zebra. Seeking new pasture, the herds move north from their breeding grounds in the grassy southern plains. ",
       "destType": "National Park",
-      "activities" : [ "Primate Trekking, ", "Bird Watching", "Animal Viewing", "Visiting of the Chala Crater lake", "Hiking to Uhuru Peak" ]
+      "activities" : [ "witness millions of migrating wildebeest over the Acacia plains, ", "Tribes in the cradle of human life", "Animal Viewing" ]
     },
     {
       "title": "Mount Kilimanjaro",
-      "image" : "https://en.wikipedia.org/wiki/File:Mt._Kilimanjaro_12.2006.JPG",
+      "imageUrl" : "https://en.wikipedia.org/wiki/File:Mt._Kilimanjaro_12.2006.JPG",
       "description": "It is the highest mountain in Africa.\\nThe highest single free-standing mountain in the world.\\n5,895 metres (19,341 ft) above sea level and about 4,900 metres (16,100 ft) above its plateau base.",
       "destType": "National Park",
       "activities" : [ "Primate Trekking, ", "Bird Watching", "Animal Viewing", "Visiting of the Chala Crater lake", "Hiking to Uhuru Peak" ]

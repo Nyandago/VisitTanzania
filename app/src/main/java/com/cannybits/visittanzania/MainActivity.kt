@@ -16,6 +16,8 @@ class MainActivity : AppCompatActivity() {
     lateinit var drawerLayout: DrawerLayout
     lateinit var actionBarDrawerToggle: ActionBarDrawerToggle
 
+    private lateinit var listView : ListView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -33,14 +35,14 @@ class MainActivity : AppCompatActivity() {
         // to make the Navigation drawer icon always appear on the action bar
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-        //array adapter
-        val arrayAdapter: ArrayAdapter<*>
-        val tzDestinations = arrayOf(
-            "Mikumi National Park", "Serengeti National Park", "Magoroto Forest Estate",
-            "Mount Kilimanjaro", "Ngorongoro Crater","Tarangire National Park", "Zanzibar Island","Kilwa Historical Sites",
-            "Ruaha National Park", "Kitulo National Park", "Nyerere National Park", "Serval Wildlife", "Chemka Hot springs",
-            "Mnazi Bay Ruvuma Estuary Marine Park", "Bagamoyo Historical Site", "Saadani national Park"
-        )
+//        //array adapter
+//        val arrayAdapter: ArrayAdapter<*>
+//        val tzDestinations = arrayOf(
+//            "Mikumi National Park", "Serengeti National Park", "Magoroto Forest Estate",
+//            "Mount Kilimanjaro", "Ngorongoro Crater","Tarangire National Park", "Zanzibar Island","Kilwa Historical Sites",
+//            "Ruaha National Park", "Kitulo National Park", "Nyerere National Park", "Serval Wildlife", "Chemka Hot springs",
+//            "Mnazi Bay Ruvuma Estuary Marine Park", "Bagamoyo Historical Site", "Saadani national Park"
+//        )
 
 //
 //        //load destinations
@@ -62,11 +64,27 @@ class MainActivity : AppCompatActivity() {
 //            R.drawable.magoroto, false))
 
 
-        // access the listView from xml file
-        val mListView = findViewById<ListView>(R.id.lvDestinationTz)
-        arrayAdapter = ArrayAdapter(this,
-            android.R.layout.simple_list_item_1, tzDestinations)
-        mListView.adapter = arrayAdapter
+//        // access the listView from xml file
+//        val mListView = findViewById<ListView>(R.id.lvDestinationTz)
+//        arrayAdapter = ArrayAdapter(this,
+//            android.R.layout.simple_list_item_1, tzDestinations)
+//        mListView.adapter = arrayAdapter
+
+
+
+        listView = findViewById<ListView>(R.id.lvDestinationTz)
+// 1
+        val destinationList = DestinationTz.getRecipesFromFile("recipes.json", this)
+// 2
+        val listItems = arrayOfNulls<String>(destinationList.size)
+// 3
+        for (i in 0 until destinationList.size) {
+            val destination = destinationList[i]
+            listItems[i] = destination.title
+        }
+// 4
+        val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, listItems)
+        listView.adapter = adapter
 
     }
 
