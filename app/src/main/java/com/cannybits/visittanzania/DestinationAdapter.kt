@@ -1,4 +1,4 @@
-package com.cannybits.visittanzania.a
+package com.cannybits.visittanzania
 
 import android.annotation.SuppressLint
 import android.content.Context
