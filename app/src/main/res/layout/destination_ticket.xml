@@ -35,9 +35,8 @@
 
             <TextView
                 android:id="@+id/tvName"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:background="@color/white"
                 android:paddingTop="4pt"
                 android:text="Mount Kilimanjaro"
@@ -47,13 +46,12 @@
             <TextView
                 android:id="@+id/tvDesc"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_height="match_parent"
                 android:background="@color/white"
-                android:textAlignment="textStart"
                 android:ellipsize="end"
                 android:lines="2"
                 android:text="The Highest Free standing mountain in the world"
+                android:textAlignment="textStart"
                 android:textSize="16sp" />
 
         </LinearLayout>
