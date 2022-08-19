@@ -53,14 +53,17 @@ class MainActivity : AppCompatActivity() {
 
         listView = findViewById(R.id.lvDestinationTz)
         val destinationList = DestinationTz.getRecipesFromFile("destinations.json", this)
-        val listItems = arrayOfNulls<String>(destinationList.size)
-        for (i in 0 until destinationList.size) {
-            val destination = destinationList[i]
-            listItems[i] = destination.title
-        }
-        val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, listItems)
-        listView.adapter = adapter
+       // val listItems = arrayOfNulls<String>(destinationList.size)
+//        for (i in 0 until destinationList.size) {
+//            val destination = destinationList[i]
+//            listItems[i] = destination.title
+//        }
+//        val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, listItems)
+//        listView.adapter = adapter
 
+
+        val adapter = DestinationAdapter(this, destinationList)
+        listView.adapter = adapter
     }
 
     // override the onOptionsItemSelected()
