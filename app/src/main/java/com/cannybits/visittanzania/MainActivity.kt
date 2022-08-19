@@ -57,17 +57,13 @@ class MainActivity : AppCompatActivity() {
 
 
 
-        listView = findViewById<ListView>(R.id.lvDestinationTz)
-// 1
-        val destinationList = DestinationTz.getRecipesFromFile("recipes.json", this)
-// 2
+        listView = findViewById(R.id.lvDestinationTz)
+        val destinationList = DestinationTz.getRecipesFromFile("destinations.json", this)
         val listItems = arrayOfNulls<String>(destinationList.size)
-// 3
         for (i in 0 until destinationList.size) {
             val destination = destinationList[i]
             listItems[i] = destination.title
         }
-// 4
         val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, listItems)
         listView.adapter = adapter
 
