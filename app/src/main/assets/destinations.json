@@ -3,21 +3,21 @@
     {
       "title": "Serengeti National Park",
       "imageUrl" : "https://www.serengeti.com/assets/img/serengeti-national-park.jpg",
-      "description": "Serengeti National Park is a World Heritage Site teeming with wildlife:\\nOver 2 million ungulates, 4000 lions, 1000 leopard, 550 cheetahs and some 500 bird species inhabit an area close to 15,000 square kilometers in size.\\nSerengeti National Park, in northern Tanzania, is known for its massive annual migration of wildebeest and zebra. Seeking new pasture, the herds move north from their breeding grounds in the grassy southern plains. ",
+      "description": "Serengeti National Park is a World Heritage Site teeming with wildlife:Over 2 million ungulates, 4000 lions, 1000 leopard, 550 cheetahs and some 500 bird species inhabit an area close to 15,000 square kilometers in size. Serengeti National Park, in northern Tanzania, is known for its massive annual migration of wildebeest and zebra. Seeking new pasture, the herds move north from their breeding grounds in the grassy southern plains. ",
       "destType": "National Park",
       "activities" : [ "witness millions of migrating wildebeest over the Acacia plains, ", "Tribes in the cradle of human life", "Animal Viewing" ]
     },
     {
       "title": "Mount Kilimanjaro",
       "imageUrl" : "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Mt._Kilimanjaro_12.2006.JPG/408px-Mt._Kilimanjaro_12.2006.JPG",
-      "description": "It is the highest mountain in Africa.\\nThe highest single free-standing mountain in the world.\\n5,895 metres (19,341 ft) above sea level and about 4,900 metres (16,100 ft) above its plateau base.",
+      "description": "It is the highest mountain in Africa.The highest single free-standing mountain in the world. 5,895 metres (19,341 ft) above sea level and about 4,900 metres (16,100 ft) above its plateau base.",
       "destType": "National Park",
       "activities" : [ "Primate Trekking, ", "Bird Watching", "Animal Viewing", "Visiting of the Chala Crater lake", "Hiking to Uhuru Peak" ]
     },
     {
       "title": "Ngorongoro Conservation Area",
       "imageUrl" : "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Ngorongoro_view_%2828_12_2010%29.jpg/330px-Ngorongoro_view_%2828_12_2010%29.jpg",
-      "description": "The Ngorongoro Conservation Area, is a protected area and a World Heritage Site located 180 km (110 mi) west of Arusha in the Crater Highlands area of Tanzania.\\nThe area is named after Ngorongoro Crater, a large volcanic caldera within the area.",
+      "description": "The Ngorongoro Conservation Area, is a protected area and a World Heritage Site located 180 km (110 mi) west of Arusha in the Crater Highlands area of Tanzania. The area is named after Ngorongoro Crater, a large volcanic caldera within the area.",
       "destType": "National Park",
       "activities" : [ "Game Drives, ","Hiking to the summit of the Gol Mountains and Oldonyo Lengai.","Visiting the Empakaai Crater", "A tour of Olduvai Gorge","Photographic Safaris", "Hot Air ballooning", "Nature Walks", "Visiting the Masai villages,","Birding" ]
     }
