@@ -20,6 +20,20 @@
       "description": "The Ngorongoro Conservation Area, is a protected area and a World Heritage Site located 180 km (110 mi) west of Arusha in the Crater Highlands area of Tanzania. The area is named after Ngorongoro Crater, a large volcanic caldera within the area.",
       "destType": "National Park",
       "activities" : [ "Game Drives, ","Hiking to the summit of the Gol Mountains and Oldonyo Lengai.","Visiting the Empakaai Crater", "A tour of Olduvai Gorge","Photographic Safaris", "Hot Air ballooning", "Nature Walks", "Visiting the Masai villages,","Birding" ]
+    },
+    {
+      "title": "Mikumi National Park",
+      "imageUrl" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-sywXZyW9N7qdOV8416gVklCWE9bCXLFEDpkhOtlByfz6UrLsZH82ohNtG8ZahnN0V_s&usqp=CAU",
+      "description": "Mikumi is Tanzania’s fourth-largest national park. It’s also the most accessible from Dar es Salaam. With almost guaranteed wildlife sightings, it makes an ideal safari destination for those without much time.Most visitors come to Mikumi National Park aiming to spot the ‘Big Five’ (cheetah, lion, elephant, buffalo, and rhino), and they are always not disappointed. Hippo pools provide close access to the mud-loving beasts, and bird-watching along the waterways is particularly rewarding. Mikumi National Park borders the Selous Game Reserve and Udzungwa National Park, and the three locations make a varied and pleasant safari circuit.",
+      "destType": "National Park",
+      "activities" : [ "Game Drives, ","Hiking to the summit of the Gol Mountains and Oldonyo Lengai.","Visiting the Empakaai Crater", "A tour of Olduvai Gorge","Photographic Safaris", "Hot Air ballooning", "Nature Walks", "Visiting the Masai villages,","Birding" ]
+    },
+    {
+      "title": "Ruaha National Park",
+      "imageUrl" : "https://afrozonekingdomsafaris.com/wp-content/uploads/2020/05/ruaha-national-park-tanzania_-_767w.jpeg",
+      "description": "The Ngorongoro Conservation Area, is a protected area and a World Heritage Site located 180 km (110 mi) west of Arusha in the Crater Highlands area of Tanzania. The area is named after Ngorongoro Crater, a large volcanic caldera within the area.",
+      "destType": "National Park",
+      "activities" : [ "Game Drives, ","Hiking to the summit of the Gol Mountains and Oldonyo Lengai.","Visiting the Empakaai Crater", "A tour of Olduvai Gorge","Photographic Safaris", "Hot Air ballooning", "Nature Walks", "Visiting the Masai villages,","Birding" ]
     }
   ]
 }
