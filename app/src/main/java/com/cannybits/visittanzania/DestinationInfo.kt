@@ -13,7 +13,7 @@ class DestinationInfo : AppCompatActivity() {
         setContentView(R.layout.activity_destination_info)
 
         val imgDest = findViewById<ImageView>(R.id.imgDestination)
-        val tvDestinationDetails = findViewById<TextView>(R.id.tvDestDetails)
+        val tvDestinationDetails = findViewById<TextView>(R.id.tvDestType)
         val tvDestinationName = findViewById<TextView>(R.id.tvDestName)
 
 
