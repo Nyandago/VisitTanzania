@@ -15,6 +15,13 @@
       "activities" : [ "Primate Trekking, ", "Bird Watching", "Animal Viewing", "Visiting of the Chala Crater lake", "Hiking to Uhuru Peak" ]
     },
     {
+      "title": "Zanzibar Island",
+      "imageUrl" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjfyNhajmZ_uwyVYdaCro87s8e9ITpx7qZyw&usqp=CAU&reload=on",
+      "description": "Zanzibar is an insular semi-autonomous state which united with Tanganyika in 1964 to form the United Republic of Tanzania. It is an Archipelago in the Indian Ocean, 25–50 kilometres (16–31 mi) off the coast of the mainland, and consists of many small islands and two large ones: Unguja (the main island, referred to informally as Zanzibar) and Pemba Island. The capital is Zanzibar City, located on the island of Unguja. Its historic centre, Stone Town, is a World Heritage Site.",
+      "destType": "Island Vacation",
+      "activities" : [ "Visit the  historical Stone Town", "Coastal Tourism", "Spice Tour, ","Visit Jozani forest and Kidike root site" ]
+    },
+    {
       "title": "Ngorongoro Conservation Area",
       "imageUrl" : "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Ngorongoro_view_%2828_12_2010%29.jpg/330px-Ngorongoro_view_%2828_12_2010%29.jpg",
       "description": "The Ngorongoro Conservation Area, is a protected area and a World Heritage Site located 180 km (110 mi) west of Arusha in the Crater Highlands area of Tanzania. The area is named after Ngorongoro Crater, a large volcanic caldera within the area.",
@@ -26,7 +33,7 @@
       "imageUrl" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-sywXZyW9N7qdOV8416gVklCWE9bCXLFEDpkhOtlByfz6UrLsZH82ohNtG8ZahnN0V_s&usqp=CAU",
       "description": "Mikumi is Tanzania’s fourth-largest national park. It’s also the most accessible from Dar es Salaam. With almost guaranteed wildlife sightings, it makes an ideal safari destination for those without much time.Most visitors come to Mikumi National Park aiming to spot the ‘Big Five’ (cheetah, lion, elephant, buffalo, and rhino), and they are always not disappointed. Hippo pools provide close access to the mud-loving beasts, and bird-watching along the waterways is particularly rewarding. Mikumi National Park borders the Selous Game Reserve and Udzungwa National Park, and the three locations make a varied and pleasant safari circuit.",
       "destType": "National Park",
-      "activities" : [ "Game Drives, ","Hiking to the summit of the Gol Mountains and Oldonyo Lengai.","Visiting the Empakaai Crater", "A tour of Olduvai Gorge","Photographic Safaris", "Hot Air ballooning", "Nature Walks", "Visiting the Masai villages,","Birding" ]
+      "activities" : [ "Game Drives, ","Photographic Safaris",  "Birding" ]
     },
     {
       "title": "Magoroto Forest",
