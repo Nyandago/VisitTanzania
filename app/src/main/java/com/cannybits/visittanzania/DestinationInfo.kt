@@ -15,8 +15,6 @@ class DestinationInfo : AppCompatActivity() {
         val imgDest = findViewById<ImageView>(R.id.imgDestination)
         val tvDestinationDetails = findViewById<TextView>(R.id.tvDestDetails)
         val tvDestinationName = findViewById<TextView>(R.id.tvDestName)
-        val tvDestType = findViewById<TextView>(R.id.tvDestType)
-        val tvDestActivities = findViewById<TextView>(R.id.tvDestActivities)
 
 
 
@@ -24,14 +22,13 @@ class DestinationInfo : AppCompatActivity() {
         val name = bundle!!.getString("name")
         val desc = bundle.getString("desc")
         val image = bundle.getInt("image")
-        val desType = bundle.getString("desType")
-        val desActivities = bundle.getString("desActivity")
+
 
         imgDest.setImageResource(image)
         tvDestinationDetails.text = desc
         tvDestinationName.text = name
-        tvDestType.text = desType
-        tvDestActivities.text = desActivities
+
+
 
 
     }
