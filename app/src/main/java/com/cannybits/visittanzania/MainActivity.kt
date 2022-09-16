@@ -57,6 +57,8 @@ class MainActivity : AppCompatActivity() {
 //            Toast.makeText(this, "Selected ${selectedDestination.imageUrl}", Toast.LENGTH_LONG).show()
             startActivity(intent)
         }
+
+
     }
 
     // override the onOptionsItemSelected()
@@ -65,10 +67,41 @@ class MainActivity : AppCompatActivity() {
     // to open and close the navigation
     // drawer when the icon is clicked
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return if (actionBarDrawerToggle.onOptionsItemSelected(item)) {
-            true
-        } else super.onOptionsItemSelected(item)
-    }
+        return when (item.itemId) {
+            R.id.nav_settings -> {
+                //settings()
+                Toast.makeText(this, "Clicked Settings",Toast.LENGTH_LONG).show()
+                true
+            }
 
+            R.id.nav_favorites -> {
+                //favorites()
+                Toast.makeText(this, "Clicked favorites",Toast.LENGTH_LONG).show()
+                true
+            }
+
+            R.id.nav_logout -> {
+                //logout()
+                Toast.makeText(this, "Clicked logout",Toast.LENGTH_LONG).show()
+                true
+            }
+
+            R.id.nav_user_icon -> {
+                //userProfile
+                Toast.makeText(this, "Clicked user icon",Toast.LENGTH_LONG).show()
+                true
+            }
+
+
+            // return if (actionBarDrawerToggle.onOptionsItemSelected(item)) {
+            //        true
+            //     }
+            else -> super.onOptionsItemSelected(item)
+        }
+
+
+
+
+    }
 
 }
