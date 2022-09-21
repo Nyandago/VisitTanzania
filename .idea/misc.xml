@@ -4,7 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Canny Bits Projects/app/src/main/res/layout/activity_destination_info.xml" value="0.213768115942029" />
+        <entry key="..\:/Canny Bits Projects/app/src/main/res/layout/activity_main.xml" value="0.213768115942029" />
+        <entry key="..\:/Canny Bits Projects/app/src/main/res/layout/content_main.xml" value="0.213768115942029" />
         <entry key="..\:/Canny Bits Projects/app/src/main/res/layout/destination_ticket.xml" value="0.213768115942029" />
+        <entry key="..\:/Canny Bits Projects/app/src/main/res/layout/nav_header.xml" value="0.213768115942029" />
+        <entry key="..\:/Canny Bits Projects/app/src/main/res/menu/navigation_menu.xml" value="0.134375" />
         <entry key="..\:/Canny Bits/visitTanzania/app/src/main/res/layout/activity_destination_info.xml" value="0.2826086956521739" />
         <entry key="..\:/Canny Bits/visitTanzania/app/src/main/res/layout/destination_nat_park_ticket.xml" value="0.2259963768115942" />
         <entry key="..\:/Canny Bits/visitTanzania/app/src/main/res/layout/destination_ticket.xml" value="0.2259963768115942" />
